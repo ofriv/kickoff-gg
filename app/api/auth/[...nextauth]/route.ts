@@ -1,3 +1,18 @@
+/**
+ * NextAuth.js Authentication API Route
+ *
+ * Handles all authentication operations:
+ * - User login with email/password (credentials provider)
+ * - Session management using JWT tokens
+ * - Password verification with bcrypt
+ * - User data storage via Prisma adapter
+ *
+ * Routes handled:
+ * - POST /api/auth/signin - User login
+ * - POST /api/auth/signout - User logout
+ * - GET /api/auth/session - Get current session
+ */
+
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { PrismaAdapter } from "@auth/prisma-adapter";

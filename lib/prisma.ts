@@ -1,3 +1,11 @@
+/**
+ * Prisma Client Singleton
+ *
+ * Creates a single Prisma client instance for database operations.
+ * In development, prevents multiple instances during hot-reload.
+ * In production, creates one instance per deployment.
+ */
+
 import { PrismaClient } from "@prisma/client";
 
 const globalForPrisma = globalThis as unknown as {
