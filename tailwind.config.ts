@@ -20,7 +20,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
+        sans: ["var(--font-questrial)", "sans-serif"],
         serif: ["var(--font-playfair)", "serif"],
       },
       colors: {
